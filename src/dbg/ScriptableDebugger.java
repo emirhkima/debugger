@@ -95,6 +95,7 @@ public class ScriptableDebugger {
         commands.put("break-once", new BreakOnce(vm));
         commands.put("break-on-count", new BreakOnCount(vm));
         commands.put("break-before-method-call", new BreakBeforeMethodCall(vm));
+        commands.put("receiver", new Receiver(vm));
     }
 
     public void read(Event event, ArrayList<String> parameterList){
